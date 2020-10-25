@@ -5,11 +5,12 @@ public class Application {
         PriceCalculator priceCalculator = new PriceCalculator();
         Ticket[] tickets = new Ticket[3];
 
-        Address wroclaw = addressCreator.create();
+        Address[] addresses = new Address[2];
+        addresses[0] = addressCreator.create();
 
-        tickets[0] = ticketCreator.create(wroclaw);
-        tickets[1] = ticketCreator. create(wroclaw);
-        tickets[2] = ticketCreator.create(wroclaw);
+        tickets[0] = ticketCreator.create(addresses[0]);
+        tickets[1] = ticketCreator. create(addresses[0]);
+        tickets[2] = ticketCreator.create(addresses[0]);
 
         tickets[0].getInfoAboutTicket();
         System.out.println("Cena biletu to: " + priceCalculator.calculatePrice(tickets[0]));

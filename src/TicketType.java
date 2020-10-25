@@ -3,7 +3,7 @@ public enum TicketType {
     STANDARD("Standard", "bilet papierowy, wysyłany tradycyjną pocztą"),
     GIFT("Gift", "bilet prezentowy, który jest pakowany w " +
             "ozdobne opakowanie i może zawierać np. autograf artysty"),
-    NONE(null, null);
+    NONE("NONE", "");
 
     private String name;
     private String description;
